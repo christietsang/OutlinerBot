@@ -13,7 +13,7 @@ def generate_header(url: str) -> list[str, ...]:
   :precondition: string is a valid url
   :precondition: url can be parsed
   :postcondition: header is generated containing important information
-  :return: a list containing important indentifying information
+  :return: a list containing important identifying information
   """
     page = requests.get(url)
     # create beautiful soup object
