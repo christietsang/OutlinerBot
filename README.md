@@ -2,7 +2,7 @@
 January 16, 2022
 
 ## Developers: 
-Aditya Singh Attri, Belal Kourkmas, Christie Tsang, Sepehr Zohoori Rad
+Aditya Singh Attri, Belal Kourkmas, Christie Tsang and Sepehr Zohoori Rad
 
 ## Description:
 A discord bot that answers questions from BCIT course outlines using
