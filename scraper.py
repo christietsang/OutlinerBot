@@ -7,14 +7,14 @@ from bs4 import BeautifulSoup
 
 def generate_header(url: str) -> list[str, ...]:
     """
-  Generate a header string containing important course identifiers.
+    Generate a header string containing important course identifiers.
 
-  :param url: a string
-  :precondition: string is a valid url
-  :precondition: url can be parsed
-  :postcondition: header is generated containing important information
-  :return: a list containing important identifying information
-  """
+    :param url: a string
+    :precondition: string is a valid url
+    :precondition: url can be parsed
+    :postcondition: header is generated containing important information
+    :return: a list containing important identifying information
+    """
     page = requests.get(url)
     # create beautiful soup object
     soup = BeautifulSoup(page.text, "html.parser")
@@ -41,15 +41,15 @@ def generate_header(url: str) -> list[str, ...]:
 
 def generate_data(url: str, class_name: str) -> str:
     """
-  Generate a list of strings from a class in a webpage that can be parsed by OpenAI.
+    Generate a list of strings from a class in a webpage that can be parsed by OpenAI.
 
-  :param url: a string
-  :param class_name: a string
-  :precondition: url is a valid url
-  :precondition: class_name contains a name of a class that exists in content of the provided url
-  :postcondition: creates a string that contains the header followed by the information filtered from the class
-  :return: a string containing the header followed by the information filtered from the class
-  """
+    :param url: a string
+    :param class_name: a string
+    :precondition: url is a valid url
+    :precondition: class_name contains a name of a class that exists in content of the provided url
+    :postcondition: creates a string that contains the header followed by the information filtered from the class
+    :return: a string containing the header followed by the information filtered from the class
+    """
     page = requests.get(url)
     header = generate_header(url)
     soup = BeautifulSoup(page.text, "html.parser")
@@ -69,13 +69,13 @@ def generate_data(url: str, class_name: str) -> str:
 
 def open_file(file_name: str) -> None:
     """
-  Open a file containing class names and facilitate data generation.
+    Open a file containing class names and facilitate data generation.
 
-  :param file_name: a string
-  :precondition: documents.txt must exist and contain urls that contain the class names defined in class_names
-  :postcondition: facilitates creation of documents.txt containing all the filtered data for OpenAI
-  :return: None 
-  """
+    :param file_name: a string
+    :precondition: documents.txt must exist and contain urls that contain the class names defined in class_names
+    :postcondition: facilitates creation of documents.txt containing all the filtered data for OpenAI
+    :return: None
+    """
     with open(file_name) as file_object:
         # split URL links by line
         lines = file_object.read().splitlines()
@@ -98,15 +98,15 @@ def open_file(file_name: str) -> None:
 
 def add_to_txt(data: list[str, ...], file_name: str) -> None:
     """
-  Write a text file that contains filtered, web-scraped data.
+    Write a text file that contains filtered, web-scraped data.
 
-  :param data: a list of strings containing the web-scraped data
-  :param file_name: the name of the file for the data to be written to
-  :precondition: data must be a list of strings
-  :precondition: file_name must be a string with a file extension
-  :postcondition: creates a file that contains filtered, web-scraped data as a list with string elements
-  :return: None
-  """
+    :param data: a list of strings containing the web-scraped data
+    :param file_name: the name of the file for the data to be written to
+    :precondition: data must be a list of strings
+    :precondition: file_name must be a string with a file extension
+    :postcondition: creates a file that contains filtered, web-scraped data as a list with string elements
+    :return: None
+    """
     # create text file and write web scraped data
     with open(file_name, 'w', encoding="UTF-8",
               errors="ignore") as file_object:
@@ -115,9 +115,9 @@ def add_to_txt(data: list[str, ...], file_name: str) -> None:
 
 def generate_content() -> None:
     """
-  Begin scraping for OpenAI.await
-  :precondition: links.txt exists in the same directory and contains a valid url on each line
-  :postcondition: begin scraping for OpenAI using links.txt
-  :return: None
-  """
+    Begin scraping for OpenAI.await
+    :precondition: links.txt exists in the same directory and contains a valid url on each line
+    :postcondition: begin scraping for OpenAI using links.txt
+    :return: None
+    """
     open_file("links.txt")
