@@ -7,13 +7,13 @@ from bs4 import BeautifulSoup
 
 def generate_header(url: str) -> list[str, ...]:
   """
-  Generate a header string containing important course indentifiers.
+  Generate a header string containing important course identifiers.
 
   :param url: a string
   :precondition: string is a valid url
   :precondition: url can be parsed
   :postcondition: header is generated containing important information
-  :return: a list containing important indentifiying information
+  :return: a list containing important indentifying information
   """
   page = requests.get(url)
   # create beautiful soup object
@@ -64,7 +64,7 @@ def generate_data(url: str, class_name: str) -> str:
   new_data = str(''.join(new_data))
 
   # join header with new data
-  return (header + new_data)
+  return header + new_data
 
 
 def open_file(file_name: str) -> None:
@@ -116,7 +116,7 @@ def add_to_txt(data: list[str, ...], file_name: str) -> None:
 def generate_content() -> None:
   """
   Begin scraping for OpenAI.await
-  :precondtion: links.txt exists in the same directory and contains a valid url on each line
+  :precondition: links.txt exists in the same directory and contains a valid url on each line
   :postcondition: begin scraping for OpenAI using links.txt
   :return: None
   """
