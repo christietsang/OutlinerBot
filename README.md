@@ -5,7 +5,7 @@ January 16, 2022
 Aditya Singh Attri, Belal Kourkmas, Christie Tsang and Sepehr Zohoori Rad
 
 ## Video Demo
-
+https://youtu.be/D7p9ACDbYbA
 
 ## Description:
 A discord bot that answers questions from BCIT course outlines using
