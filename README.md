@@ -19,6 +19,16 @@ https://youtu.be/D7p9ACDbYbA
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Built With
+
+* [Flask](https://flask.palletsprojects.com/en/2.2.x/)
+* [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/)
+* [Python](https://www.python.org/)
+* [OpenAI](https://openai.com/)
+* [Discord API](https://discord.com/developers/docs/topics/oauth2#bots)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Logic and Usage:
 The bot must be provided with a list of links for 
 the course outlines, and then initialized before being used. Initializing 
