@@ -3,7 +3,11 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Outliner Discord Bot
+
+<div align="center">
+  <h1 align="center">Outliner Discord Bot</h1>
+</div>
+<br>
 
 ## About The Project
 Outliner is a discord bot that answers questions from BCIT course outlines using OpenAI answer API. BCIT students are known to have immense workloads and may not always have time to manually check course outlines.  To solve this problem, our team built Outliner to help students be better informed while saving time.
@@ -66,15 +70,15 @@ Sepehr Zohoori Rad - [LinkedIn](https://www.linkedin.com/in/sepehr-zohoori-rad/)
 
 Aditya Singh Attri  - [LinkedIn](https://www.linkedin.com/in/aditya3650/)
 
-Project Link: [https://github.com/christietsang/nwHacks2022.git](https://github.com/christietsang/nwHacks2022.git)
+Project Link: [https://github.com/christietsang/OutlinerBot.git](https://github.com/christietsang/OutlinerBot.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/christietsang/nwHacks2022.svg?style=for-the-badge
-[contributors-url]: https://github.com/christietsang/nwHacks2022/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/christietsang/OutlinerBot.svg?style=for-the-badge
+[contributors-url]: https://github.com/christietsang/OutlinerBot/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christietsang/
