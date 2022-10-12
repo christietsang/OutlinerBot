@@ -12,6 +12,8 @@
 ## About The Project
 Outliner is a discord bot that answers questions from BCIT course outlines using OpenAI answer API. BCIT students are known to have immense workloads and may not always have time to manually check course outlines.  To solve this problem, our team built Outliner to help students be better informed while saving time.
 
+Developed in a day for nwHacks 2021.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Video Demo
